@@ -1,5 +1,42 @@
-downloads/
-.venv/
-__pycache__/
-*.pyc
+# Environment and secrets
 .env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Generated media and local runtime output
+downloads/
+*.wav
+*.mp3
+*.mp4
+*.m4a
+*.mov
+*.mkv
+*.webm
+*_converted.*
+*_chunk*.*
+
+# Local vector database / embeddings
+vector_db/
+chroma/
+*.sqlite3
+
+# Logs and OS/editor files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
